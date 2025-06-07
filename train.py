@@ -28,5 +28,4 @@ acc_test = accuracy_score(y_pred=y_pred, y_true=y_test)
 print(f'acuracia teste: {acc_test}')
 
 # salvando modelo 
-with open('modelo_reg_logistica', 'wb') as f:
-    joblib.dump('modelo_reg_logistica', f)
+joblib.dump(model, 'modelo_reg_logi.pkl')
